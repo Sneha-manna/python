@@ -1,0 +1,24 @@
+
+# Description: This script prints Lower Triangular, Upper Triangular, and Pyramid patterns using '*'.
+rows = 5
+
+# 1. Lower Triangular Pattern
+print("Lower Triangular Pattern:\n")
+for i in range(1, rows + 1):
+    print("* " * i)
+print()  # Line break
+
+# 2. Upper Triangular Pattern
+print("Upper Triangular Pattern:\n")
+for i in range(rows, 0, -1):
+    spaces = "  " * (rows - i)
+    stars = "* " * i
+    print(spaces + stars)
+print()  # Line break
+
+# 3. Pyramid Pattern
+print("Pyramid Pattern:\n")
+for i in range(1, rows + 1):
+    spaces = "  " * (rows - i)
+    stars = "* " * (2 * i - 1)
+    print(spaces + stars)
